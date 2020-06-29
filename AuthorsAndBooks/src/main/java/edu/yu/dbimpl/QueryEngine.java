@@ -9,6 +9,22 @@ import java.util.Set;
  */
 public interface QueryEngine {
 
+  /** Configures the QueryEngine instance ot use the specified parameters when
+   * connecting to the backing database.  This method must be invoked by the
+   * client immediately after constructing the QueryEngine instance.  All
+   * interactions with the database that are subsequently performed by this
+   * instance must use this configuration information.
+   *
+   * @param dbname Name of the database
+   * @param username The database user on whose behalf the connection is being
+   * made.
+   * @param password The database user's password.
+   * @return java.sql.Connection configured for the specified database and user
+   * credentials
+   * @see https://jdbc.postgresql.org/documentation/80/connect.html
+   */
+  void configureConnection(String dbname, String username, String password);
+
   /** Return all AuthorsInfos currently in the database.
    */
   Set<AuthorInfo> getAllAuthorInfos();
