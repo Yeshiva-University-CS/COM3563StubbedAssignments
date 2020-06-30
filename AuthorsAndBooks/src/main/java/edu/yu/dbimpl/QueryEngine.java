@@ -1,5 +1,6 @@
 package edu.yu.dbimpl;
 
+import java.util.List;
 import java.util.Set;
 
 /** An interface of Book/Author/etc queries.  Also a factory for the various
@@ -46,7 +47,7 @@ public interface QueryEngine {
    *
    * @param title Book's title.
    */
-  Set<Book> booksByTitle(final String title);
+  List<Book> booksByTitle(final String title);
 
   /** Create an instance of AuthorInfo.
    *
