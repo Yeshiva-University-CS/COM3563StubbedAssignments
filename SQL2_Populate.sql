@@ -5,7 +5,7 @@
 
 drop database sql2;
 create database sql2;
-\connect sql12
+\connect sql2;
 
 drop table company;
 drop table employee;
