@@ -2,7 +2,7 @@ package edu.yu.dbimpl;
 
 import java.util.Set;
 
-/* Defines an interface for author information.  In contrast to theh Author
+/* Defines an interface for author information.  In contrast to the Author
  * interface, this interface does not include books written by this author
  *
  * @author Avraham Leff
