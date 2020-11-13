@@ -10,7 +10,7 @@ import java.util.Set;
  */
 public interface QueryEngine {
 
-  /** Configures the QueryEngine instance ot use the specified parameters when
+  /** Configures the QueryEngine instance to use the specified parameters when
    * connecting to the backing database.  This method must be invoked by the
    * client immediately after constructing the QueryEngine instance.  All
    * interactions with the database that are subsequently performed by this
