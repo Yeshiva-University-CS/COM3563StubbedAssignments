@@ -56,6 +56,8 @@ public interface QueryEngine {
   AuthorInfo createAuthorInfo(int authorID, String firstName, String lastName);
 
   /** Create a TitleInfo instance
+   *
+   * @throws IllegalArgumentException if something is wrong with the parameters
    */
   TitleInfo createTitleInfo(final String isbn, final String title,
                             final String copyright, final int editionNumber);
